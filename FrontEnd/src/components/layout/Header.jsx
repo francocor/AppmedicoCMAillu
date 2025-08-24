@@ -46,7 +46,7 @@ export default function Header() {
   }, [user]);
 
   return (
-    <header className="w-full bg-gradient-to-r from-white via-[#4fdfbe] to-[#33bebc] px-4 sm:px-6 py-2">
+    <header className="w-full bg-gradient-to-r from-white via-[#2e3192] to-[#03aced] px-4 sm:px-6 py-2">
       <div className="flex flex-col sm:flex-row items-center justify-between relative gap-2 sm:gap-0">
         
         {/* Logo centrado arriba en mobile, al centro en desktop */}

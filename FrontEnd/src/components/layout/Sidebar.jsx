@@ -34,7 +34,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`relative bg-gradient-to-b from-white via-[#4fdfbe] to-[#33bebc]
+      className={`relative bg-gradient-to-b from-white via-[#2e3192] to-[#03aced]
         flex flex-col items-center transition-all duration-300
         ${isOpen ? "w-[200px]" : "w-[80px]"} h-screen`}
     >

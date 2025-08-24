@@ -206,7 +206,7 @@ export default function UserMenu({ visible, onClose }) {
       {/* Menú flotante */}
       <div
         ref={menuRef}
-        className="absolute right-4 w-[220px] bg-gradient-to-b from-white via-[#4fdfbe] to-[#33bebc] rounded-2xl shadow-lg p-4 z-50
+        className="absolute right-4 w-[220px] bg-gradient-to-b from-white via-[#2e3192] to-[#03aced] rounded-2xl shadow-lg p-4 z-50
            top-[110px] sm:top-[85px] transition-all duration-300 ease-in-out"
       >
         <ul className="flex flex-col gap-2">

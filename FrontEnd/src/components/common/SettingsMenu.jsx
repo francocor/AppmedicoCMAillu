@@ -93,7 +93,7 @@ export default function SettingsMenu({ visible }) {
   if (!visible) return null;
 
   return (
-    <div className="absolute bottom-[80px] left-6 w-[250px] bg-gradient-to-b from-white via-[#4fdfbe] to-[#33bebc] rounded-2xl shadow-lg p-4 z-50">
+    <div className="absolute bottom-[80px] left-6 w-[250px] bg-gradient-to-b from-white via-[#2e3192] to-[#03aced] rounded-2xl shadow-lg p-4 z-50">
       <ul className="flex flex-col gap-2">
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>

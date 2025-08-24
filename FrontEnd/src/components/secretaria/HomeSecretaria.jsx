@@ -100,7 +100,7 @@ export default function HomeSecretaria() {
     <main className="w-full flex flex-col items-center px-4 py-10">
       <div className="w-full max-w-[1400px] flex flex-col lg:flex-row justify-center gap-10">
         {/* Turnos próximos */}
-        <div className="w-full max-w-[480px] bg-gradient-to-b from-white via-[#4fdfbe] to-[#33bebc] rounded-[20px] p-6">
+        <div className="w-full max-w-[480px] bg-gradient-to-b from-white via-[#2e3192] to-[#03aced] rounded-[20px] p-6">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-[28px] font-semibold text-black">Próximos Turnos</h2>
             <Calendar className="w-8 h-8 text-black" />

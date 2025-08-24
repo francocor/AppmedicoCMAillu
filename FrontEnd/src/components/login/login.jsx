@@ -70,7 +70,7 @@ export default function Login() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#fcfefe] px-4">
       <div className="w-full max-w-md">
-        <Card className="border-none shadow-none bg-gradient-to-b from-[#e0ffff] to-[#20b2aa] rounded-[40px] py-6">
+        <Card className="border-none shadow-none bg-gradient-to-b from-[#2e3192] to-[#03aced] rounded-[40px] py-6">
           <CardContent className="flex flex-col items-center pt-6">
 
             {/* Logo */}
