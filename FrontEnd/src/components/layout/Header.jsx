@@ -111,6 +111,9 @@ export default function Header() {
         {/* Menú desplegable usuario */}
         <UserMenu visible={showUserMenu} />
       </div>
+
+
+
     </header>
   );
 }

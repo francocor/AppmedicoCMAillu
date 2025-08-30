@@ -7,7 +7,7 @@ import {
   BarChart2,
   Menu,
   Settings,
-  Users2, // ícono para "Usuarios"
+  Users2, 
 } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import SidebarItem from "./SidebarItem";
@@ -25,7 +25,7 @@ export default function SidebarAdmin() {
     { icon: BookOpen, label: "Turnos", path: "/turnos" },
     { icon: FileText, label: "Recetas", path: "/recetas" },
     { icon: BarChart2, label: "Gráficos", path: "/graficos" },
-    { icon: Users2, label: "Usuarios", path: "/admin" }, // NUEVA SECCIÓN
+    { icon: Users2, label: "Usuarios", path: "/admin" },
   ];
 
   return (

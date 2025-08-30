@@ -21,7 +21,7 @@ export default function Sidebar() {
   const { user } = useUser();
 
   const items = [
-    { icon: BookOpen, label: "Turnos", path: "/turnos" }, // ✅ primero como pantalla principal
+    { icon: BookOpen, label: "Turnos", path: "/turnos" },
     { icon: Activity, label: "Pacientes", path: "/pacientes" },
     { icon: FileText, label: "Recetas", path: "/recetas" },
     { icon: CreditCard, label: "Facturación", path: "/facturacion" },
@@ -34,11 +34,14 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`relative bg-gradient-to-b from-white via-[#2e3192] to-[#03aced]
-        flex flex-col items-center transition-all duration-300
-        ${isOpen ? "w-[200px]" : "w-[80px]"} h-screen`}
+      className={`relative bg-gradient-to-b from-white via-[#2e3192] to-[#03aced] flex flex-col items-center transition-all duration-300 ${
+        isOpen ? "w-[200px]" : "w-[80px]"
+      } h-screen`}
     >
-      <button onClick={() => setIsOpen(!isOpen)} className="text-black mt-4 mb-6">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="text-black mt-4 mb-6"
+      >
         <Menu className="h-6 w-6" />
       </button>
 

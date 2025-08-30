@@ -6,7 +6,7 @@ export default function AgendaPanel({ visible, onClose, turnos, doctor }) {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-0 right-0 w-full max-w-md h-full bg-white shadow-lg z-50 border-l border-gray-300">
+    <div className="fixed top-0 right-0 w-full max-w-md h-full bg-gradient-to-b from-[#2e3192] to-white shadow-lg z-50 border-l border-gray-300">
       <div className="p-6 flex flex-col h-full">
         {/* Encabezado */}
         <div className="flex justify-between items-center mb-4">

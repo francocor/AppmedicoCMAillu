@@ -48,7 +48,7 @@ export default function AtencionHeader() {
           <Dialog>
             <DialogTrigger asChild>
               <Button
-                className="px-6 py-1 bg-gradient-to-b from-[#179cba] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition w-full sm:w-[120px] text-sm font-medium"
+                className="px-6 py-1 bg-gradient-to-b from-[#2e3192] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition w-full sm:w-[120px] text-sm font-medium"
               >
                 Cargar
               </Button>

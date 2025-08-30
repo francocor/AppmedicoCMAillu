@@ -68,7 +68,7 @@ export default function AsignarTurnoBox({ modo = "profesional", doctores = [], o
           <div className="flex flex-col items-center gap-2">
             <button
               onClick={handleAbrirAgenda}
-              className="w-[120px] h-[100px] bg-gradient-to-b from-[#179cba] to-white rounded-full flex flex-col justify-center items-center shadow-md hover:opacity-80 transition"
+              className="w-[120px] h-[100px] bg-gradient-to-b from-[#2e3192] to-white rounded-full flex flex-col justify-center items-center shadow-md hover:opacity-80 transition"
             >
               <Calendar className="w-[40px] h-[40px] text-black" />
               <span className="text-base font-sans text-black">Agenda</span>

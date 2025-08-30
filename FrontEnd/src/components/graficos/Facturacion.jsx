@@ -438,13 +438,13 @@ const [estado, setEstado] = useState(ALL);
       {/* Botones */}
       <div className="flex flex-col sm:flex-row justify-end gap-4 mt-6">
         <button
-          className="px-6 py-2 bg-gradient-to-b from-[#179cba] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition"
+          className="px-6 py-2 bg-gradient-to-b from-[#2e3192] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition"
           onClick={exportarExcel}
         >
           Exportar a Excel
         </button>
         <button
-          className="px-6 py-2 bg-gradient-to-b from-[#179cba] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition"
+          className="px-6 py-2 bg-gradient-to-b from-[#2e3192] to-white text-black border border-black rounded-[40px] shadow hover:opacity-80 transition"
           onClick={exportarPDF}
         >
           Exportar a PDF

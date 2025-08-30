@@ -10,7 +10,7 @@ body,
 @tailwind components;
 @tailwind utilities;
 
-/* Variables base si las necesitás */
+/* Variables base */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -19,10 +19,16 @@ body,
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    /* ✅ Botones y color principal */
+    --primary: 152 97% 33%;            /* #03a550 */
+    --primary-foreground: 0 0% 100%;
+
+    /* ✅ Secundario igual al principal */
+    --secondary: 152 97% 33%;          /* #03a550 */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Resto de la paleta (sin cambios) */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -32,6 +38,7 @@ body,
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
+
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -43,6 +50,7 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -50,10 +58,14 @@ body,
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+
+    /* ✅ Mantener el verde en dark mode también */
+    --primary: 152 97% 33%;            /* #03a550 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 152 97% 33%;          /* #03a550 */
+    --secondary-foreground: 0 0% 100%;
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 217.2 32.6% 17.5%;
@@ -77,5 +89,15 @@ body,
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* (Opcional) Helpers de botón para no repetir clases */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition;
   }
 }
